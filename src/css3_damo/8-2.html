@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body > div{
+        border: 1px solid #cccccc;
+        margin: 20px;
+        padding: 10px;
+    }
+    div > div{
+        border: 1px solid #ff3366;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .box{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+    .inline-box{
+        display: -webkit-inline-flex;
+    }
+</style>
+<body>
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <div class="inline-box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>

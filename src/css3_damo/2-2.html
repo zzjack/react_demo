@@ -1,0 +1,56 @@
+<!--
+1. 后代，E F E元素下面所有的F元素;
+2. 子元素，E > F E元素下面的子元素F
+3. 平级 E+F，紧邻E的F元素
+4. 平级 E~F，
+    E~F xianglin de suoyou yuansu;
+3. #id;.class;tag;*;,;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use CSS3 selector</title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0;
+        padding:0;
+    }
+    body{
+        width:300px;
+        margin: 0 auto;
+    }
+    div{
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid #cccccc;
+    }
+    div>div~div{
+        background: orange;
+    }
+    .active+div{
+        background: lime;
+    }
+    .active ~ div{
+        background:blue;
+    }
+</style>
+<body>
+    <div class="active">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div>7
+        <div>8
+            <div>9
+                <div>10</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
